@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+**/__pycache__/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ChromaDB persistent store (rebuilt by ingest.py)
+support_assistant/chroma_db/
+
+# SQLite lock/journal files (e.g. from DB Browser for SQLite)
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Secrets — never commit an API key (e.g. GROQ_API_KEY for the optional
+# MOCK_LLM=0 extension). Set env vars in your shell instead.
+.env
+*.env
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/
